@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="allen.com.labo2_linearlayout.MainActivity"
+       >
+        <TextView
+            android:id="@+id/nombre1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="8sp"
+            android:text="Allen"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/nombre1"
+
+        android:textSize="25sp"
+        android:layout_marginLeft="8sp"
+        android:text="Allen2"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nombre1"
+        android:layout_alignLeft="@id/nombre1"
+        android:layout_below="@+id/nombre1"
+        android:text="Allen2"
+        android:textSize="25sp"
+        android:id="@+id/textView2" />
+
+    <Button
+        android:id="@+id/buttonguardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="guardar" />
+
+    <Button
+        android:id="@+id/buttoncancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonguardar"
+        android:layout_alignBottom="@+id/buttonguardar"
+        android:layout_toEndOf="@+id/buttonguardar"
+        android:onClick="cancelar"
+        android:text="cancelar" />
+
+
+</RelativeLayout>
